@@ -1,0 +1,51 @@
+//Brandon Manuel Pérez Balandrano 1603497
+
+//Muestra una cara aleatoria del dado al darle clic.
+
+function setup() {
+	createCanvas(400, 400);
+	background(155);
+}
+
+function mousePressed() {
+	if ((mouseX <= 350) && (mouseX > 50) && (mouseY <= 350) && (mouseY > 50)) {
+		background(155);
+		fill(255);
+		rect(50, 50, 300, 300, 30);
+		var dado = int(random(1, 7));
+		if (dado == 1) {
+			fill(0);
+			ellipse(200, 200, 50, 50);
+		} else if (dado == 2) {
+			fill(0);
+			ellipse(140, 140, 50, 50);
+			ellipse(260, 260, 50, 50);
+		} else if (dado == 3) {
+			fill(0);
+			ellipse(120, 120, 50, 50);
+			ellipse(200, 200, 50, 50);
+			ellipse(280, 280, 50, 50);
+		} else if (dado == 4) {
+			fill(0);
+			ellipse(125, 125, 50, 50);
+			ellipse(275, 125, 50, 50);
+			ellipse(125, 275, 50, 50);
+			ellipse(275, 275, 50, 50);
+		} else if (dado == 5) {
+			fill(0);
+			ellipse(125, 125, 50, 50);
+			ellipse(275, 125, 50, 50);
+			ellipse(200, 200, 50, 50);
+			ellipse(125, 275, 50, 50);
+			ellipse(275, 275, 50, 50);
+		} else {
+			fill(0);
+			ellipse(130, 120, 50, 50);
+			ellipse(130, 200, 50, 50);
+			ellipse(130, 280, 50, 50);
+			ellipse(270, 120, 50, 50);
+			ellipse(270, 200, 50, 50);
+			ellipse(270, 280, 50, 50);
+		}
+	}
+}
